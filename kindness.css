@@ -1,0 +1,212 @@
+/*kindness wall css*/
+.wall {
+display:flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 10px;
+margin-top:95px;
+
+padding: 20px
+}
+.wall p{
+  margin: 30px;
+  font-size:large;
+ }
+/*rectangular 4 notes*/ 
+.note-1 {
+background-color: white;
+color:black;
+border-radius: 8px;
+transform: rotate(3deg);
+border-radius: 30px;
+  padding: 8px 20px;
+  width: fit-content;
+}
+.note-2 {
+  background-color: white;
+color:black;
+transform: rotate(-3deg);
+border-radius: 30px;
+  padding: 8px 20px;
+  width: fit-content;
+}
+.note-3 {
+  background-color: white;
+color:black;
+transform: rotate(3deg);
+border-radius: 30px;
+  padding: 8px 20px;
+  width: fit-content;
+}
+.note-4 {
+  background-color: white;
+  color:black;
+  transform: rotate(-3deg);
+  border-radius: 30px;
+  padding: 8px 20px;
+  width: fit-content;
+}
+/*rectangular note*/
+.note-5 {
+  background-color: white;
+  color:black;
+  height:240px;
+  width: 180px;
+}
+/*rectangular note but width > height*/
+.note-6 {
+  background-color: white;
+  color:black;
+  height:120px;
+  width: 260px;
+}
+/*blob note*/
+.note-7 {
+  background-color: white;
+  color:black;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  height:220px;
+  width: 180px;
+}
+.note-7 p {
+  margin-top: 80px;
+}
+/*rectangular note with rounded corners*/
+.note-8 {
+  background-color: white;
+  color:black;
+  border-radius: 30px;
+  height:150px;
+  width: 240px;
+}
+/*rectangular 4 notes*/ 
+.note-9 {
+  background-color: white;
+color:black;
+  padding: 8px 20px;
+  width: fit-content;
+}
+.note-10 {
+  background-color: white;
+color:black;
+  padding: 8px 20px;
+  width: fit-content;
+  }
+.note-11 {
+  background-color: white;
+color:black;
+  padding: 8px 20px;
+  width: fit-content;
+}
+.note-12 {
+  background-color: white;
+color:black;
+  padding: 8px 20px;
+  width: fit-content;
+  }
+/*rectangular note*/ 
+.note-13 {
+  background-color: white;
+  color:black;
+  height:200px;
+  width: 300px;
+}
+/*rectangular note with rounded corners*/
+.note-14 {
+  background-color: white;
+  color:black;
+   height:240px;
+  width:150px;
+  border-radius: 40px;
+}
+/*rectangular note*/
+.note-15 {
+  background-color: white;
+  color:black;
+  border-radius: 60% 60% 30% 50% / 60% 30% 50% 60%;
+  height:220px;
+  width: 180px;
+}
+/*rectangular 4 notes*/
+.note-16 {
+  background-color: white;
+color:black;
+border-radius: 8px;
+transform: rotate(4deg);
+border-radius: 30px;
+  padding: 8px 20px;
+  width: fit-content;
+}
+.note-17 {
+  background-color: white;
+color:black;
+border-radius: 8px;
+transform: rotate(-4deg);
+border-radius: 30px;
+  padding: 8px 20px;
+  width: fit-content;
+}
+.note-18 {
+  background-color: white;
+color:black;
+border-radius: 8px;
+transform: rotate(4deg);
+border-radius: 30px;
+  padding: 8px 20px;
+  width: fit-content;
+}
+.note-19 {
+  background-color: white;
+color:black;
+border-radius: 8px;
+transform: rotate(-4deg);
+border-radius: 30px;
+  padding: 8px 20px;
+  width: fit-content;
+}
+.quad-1, .quad-2, .quad-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.quad-1 p, .quad-2 p, .quad-3 p,
+.quad-1 div p, .quad-2 div p, .quad-3 div p {
+  margin: 0;
+}
+.input {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding-top: 20px;
+  height: 180px;
+  width: 220px;
+}
+
+
+.input input {
+  border: none;
+  outline: none;
+  background: white;
+  text-align: center;
+
+}
+.input label {
+  color: black;
+}
+.wall::hover{
+  background-color: var(--softMauve);
+}
+.note-1:hover, .note-2:hover, .note-3:hover,.note-4:hover, .note-5:hover, .note-6:hover,.note-7:hover, .note-8:hover, .note-9:hover, .note-10:hover, .note-11:hover, .note-12:hover, .note-13:hover, .note-14:hover, .note-15:hover, .note-16:hover, .note-17:hover, .note-18:hover, .note-19:hover, .input:hover {
+  background-color: var(--softMauve);
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700; /* Bold */
+}
+/*end of kindness wall css*/
