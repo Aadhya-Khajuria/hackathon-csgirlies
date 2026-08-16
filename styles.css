@@ -865,21 +865,20 @@ border-radius: 30px;
    /*Footer CSS*/
 
    .team-link {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 12px 24px;
-  background: #6b4c9a;
-  color: white;
-  text-decoration: none;
-  border-radius: 999px;
-  font-weight: 600;
-  transition: 0.2s ease;
+  display: inline-block !important;
+  margin-top: 15px !important;
+  padding: 12px 28px !important;
+  background-color: #6b4c9a !important;
+  color: white !important;
+  text-decoration: none !important;
+  border-radius: 999px !important;
+  font-weight: 600 !important;
+  transition: 0.2s ease !important;
 }
 
 .team-link:hover {
-  background: #563b80;
+  background-color: #563b80 !important;
   transform: translateY(-2px);
 }
-
 /*End of Footer CSS*/
 
