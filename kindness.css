@@ -1,3 +1,373 @@
+:root {
+  /* these hex codes were coppied from a canva slideshow used to help wire-frame our code */
+  --deepLavendar: #5a4d7a;
+  --lilac: #b8a4d4;
+  --softMauve: #d5c8e4;
+  --midLavendar:#e0d6eb;
+  --blush: #eae3f0;
+}
+body {
+  background-color: var(--blush);
+  margin:0px;
+  padding: 0;
+}
+/* This is the CSS for the PLANNER */
+.studyTimer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.studyTimer* {
+  width: 400px;
+  height: 350px;
+}
+.days {
+  display: flex;
+  flex-direction: row;
+  gap:10px;
+  justify-content: space-evenly; 
+}
+iframe {
+  border-radius: 20px;
+}
+.week {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: white;
+  border: 10px soild white;
+}
+.top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 92%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 15px;
+}
+.boxes {
+  display: flex;
+}
+.second {
+  max-width: 48%;
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 15px;
+  padding: 10px;
+  padding-right:0px;
+}
+#notes,
+#goals,
+#mindfulness,
+#movement{
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: space-between;
+
+}
+.week textarea {
+  flex: 1;
+  min-width: 110px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.planner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: white;
+  padding: 15px;
+  border: 10px solid white;
+  border-radius: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 25px;
+  margin-top: 0px;
+}
+.meow {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 20px;
+}
+.meow button {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 300;
+  margin-bottom: 0px;
+}
+textarea {
+  background-color: var(--softMauve);
+}
+
+/* END OF PLANNER CODE */
+
+
+/* THIS IS EDUCATION CODE */
+img{
+  width:400px;
+  height:auto;
+  border:10px solid var(--lilac);
+  border-radius:150px;
+  margin:15px;
+}
+.pod{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+.pod1{
+  display:flex;
+  flex-direction:row-reverse;
+  justify-content:space-between;
+}
+.titleAndP{
+  display:flex;
+  flex-direction:column;
+
+}
+
+/* END OF EDUCATION CODE */
+
+/* this is where the headings css goes PLEASE KEEP IT ORGANIZED */
+h3{
+  background-color: var(--deepLavendar);
+  border:3px solid var(--deepLavendar);
+  border-radius:20px;
+  max-width: 150px;
+}
+h3{
+   display:flex;
+  justify-content: center;
+}
+h2{
+  display:flex;
+  justify-content:center;
+}
+h1{
+  display:flex;
+  justify-content:center;
+  margin-top:85px;
+}
+/* END OF HEADING CODE */
+
+/*Navbar css*/
+.navBar {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: inline;
+  z-index: 3;
+  background-color: var(--lilac);
+  outline: 5px;
+        outline-style: solid;
+        outline-color: #5a4d7a;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  float: sticky;
+  right: 35px;
+  padding-top: 25px;
+  gap: 25px;
+  justify-content: flex-end;
+  
+}
+.name {
+  margin-right: auto;
+  margin-left: 30px;
+  }
+.name h2 {
+ margin: 0;
+ font-family:Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
+ color:#5a4d7a;
+font-weight: normal;
+}
+.navBar a {
+  text-decoration: none;
+  color: white;
+  padding: 0 10px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700; /* Bold */
+}
+
+nav a:hover {
+  color:#5a4d7a;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:#b8a4d4;
+  height: 60px;
+  width: 120px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+#dropdown1 {
+  height: 60px;
+  width: 140px;
+  padding-top: 10px;
+}
+#dropdown2 {
+  height: 90px;
+  width: 140px;
+  padding-top: 10px;
+}
+
+#dropdown3 {
+  height: 60px;
+  padding-top: 10px;
+}
+/*The start of the mood journal code*/
+:root {
+  --deepLavendar: #5a4d7a;
+  --lilac: #b8a4d4;
+  --softMauve: #d5c8e4;
+  --midLavendar: #e0d6eb;
+  --blush: #eae3f0;
+  
+  --rose: var(--deepLavendar);
+  --blossom: var(--lilac);
+  --cotton: var(--softMauve);
+  --light: var(--midLavendar);
+  --cream: var(--blush);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--cream);
+  color: #4b3c3c;
+}
+
+
+
+main {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  text-align: center;
+  color: var(--rose);
+  font-size: 48px;
+  margin-bottom: 35px;
+}
+
+.journal-card {
+  background: white;
+  border-radius: 25px;
+  padding: 40px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  color: var(--rose);
+  margin-bottom: 12px;
+  font-size: 24px;
+}
+
+.mood label {
+  display: block;
+  color: var(--rose);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+input[type="date"],
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid var(--cotton);
+  border-radius: 15px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  background: var(--light);
+  color: #4b3c3c;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.mood-options,
+.energy-options,
+.stress-options {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.mood-options button,
+.energy-options button,
+.stress-options button {
+  background-color: var(--deepLavendar);
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.mood-options button:hover,
+.energy-options button:hover,
+.stress-options button:hover {
+  background-color: var(--lilac);
+  transform: scale(1.05);
+}
+/* Add this once, at the end of your file or in a "Global" section */
+button {
+  background-color: var(--deepLavendar);
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+
+button:hover {
+  background-color: var(--lilac);
+  transform: scale(1.05);
+}
+
 /*kindness wall css*/
 .wall {
 display:flex;
@@ -5,7 +375,6 @@ flex-wrap: wrap;
 justify-content: center;
 gap: 10px;
 margin-top:95px;
-
 padding: 20px
 }
 .wall p{
@@ -205,8 +574,10 @@ border-radius: 30px;
   transform: scale(1.05);
   transition: transform 0.2s ease;
 }
+/*end of kindness wall css*/
+
+
 * {
   font-family: "Poppins", sans-serif;
   font-weight: 700; /* Bold */
 }
-/*end of kindness wall css*/
