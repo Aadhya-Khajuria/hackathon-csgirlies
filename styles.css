@@ -882,3 +882,7 @@ border-radius: 30px;
   transform: translateX(4px);
 }
 /*End of Meet the Team button CSS*/
+#favicon{
+  width:30px;
+  height:auto;
+}
