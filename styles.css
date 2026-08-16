@@ -859,26 +859,47 @@ border-radius: 30px;
   transition:0.3s;
  }
  textarea:hover,
- input:hover{
+input:hover {
   transform: translateY(-3px);
+}
 
-   /*Footer CSS*/
+/* Footer CSS */
 
-   .team-link {
-  display: inline-block !important;
-  margin-top: 15px !important;
-  padding: 12px 28px !important;
-  background-color: #6b4c9a !important;
-  color: white !important;
-  text-decoration: none !important;
-  border-radius: 999px !important;
-  font-weight: 600 !important;
-  transition: 0.2s ease !important;
+.site-footer {
+  background-color: var(--deepLavendar);
+  color: white;
+  text-align: center;
+  padding: 40px 20px 25px;
+  margin-top: 60px;
+}
+
+.site-footer h2 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.site-footer p {
+  background: none;
+  border: none;
+  color: white;
+  margin: 8px 0;
+}
+
+.team-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 28px;
+  background-color: #6b4c9a;
+  color: white;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: 0.2s ease;
 }
 
 .team-link:hover {
-  background-color: #563b80 !important;
+  background-color: #563b80;
   transform: translateY(-2px);
 }
-/*End of Footer CSS*/
 
+/* End of Footer CSS */
