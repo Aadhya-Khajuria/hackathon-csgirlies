@@ -861,25 +861,19 @@ border-radius: 30px;
  textarea:hover,
  input:hover{
   transform: translateY(-3px);
- /*Meet the Team button CSS*/
-.team-button {
-  display: block;
-  width: fit-content;
-  margin: 30px auto;
-  padding: 8px 16px;
-  color: var(--deepLavendar);
-  font-size: 14px;
-  font-weight: 700;
+ /*Footer CSS*/
+.team-link {
+  display: inline-block;
+  margin-top: 15px;
+  color: white;
   text-decoration: none;
-  border: 2px solid var(--deepLavendar);
-  border-radius: 20px;
-  transition: 0.3s ease;
+  font-weight: 600;
+  transition: 0.2s;
 }
 
-.team-button:hover {
-  background-color: var(--deepLavendar);
-  color: white;
-  transform: translateX(4px);
+.team-link:hover {
+  text-decoration: underline;
+  transform: translateY(-2px);
 }
-/*End of Meet the Team button CSS*/
+/*End of Footer CSS*/
 
