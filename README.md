@@ -1,12 +1,12 @@
 ## Wellify
-Unfiltered Mind is designed to help you embody an active role in your lifestyle. Our goal is to help you make intentional choices that lead to a healthy and fulfilling life, whatever that may look like for you.
+Wellify is designed to help you embody an active role in your lifestyle. Our goal is to help you make intentional choices that lead to a healthy and fulfilling life, whatever that may look like for you.
 ## Features
 -education pages about physical and mental health
 -mood tracker
 -mindfulness tracker
 -health tracker
 -daily planner
--self care activities
+-self care activities (mental and physical)
 -kindness wall
 ## why we built this
 Our inspiration for this project was that there is a very important connection between your physical and mental health, and we need to preserve and cultivate that connection.
