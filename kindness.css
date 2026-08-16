@@ -619,3 +619,17 @@ border-radius: 30px;
   background-color: #563b80;
   transform: translateY(-2px);
 }
+.generator {
+  background: white;
+  border-radius: 25px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+#suggestion {
+  background-color: var(--midLavendar);
+  padding: 25px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
