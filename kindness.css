@@ -581,3 +581,41 @@ border-radius: 30px;
   font-family: "Poppins", sans-serif;
   font-weight: 700; /* Bold */
 }
+/* Footer CSS */
+
+.site-footer {
+  background-color: var(--deepLavendar);
+  color: white;
+  text-align: center;
+  padding: 40px 20px 25px;
+  margin-top: 60px;
+}
+
+.site-footer h2 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.site-footer p {
+  background: none;
+  border: none;
+  color: white;
+  margin: 8px 0;
+}
+
+.team-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 28px;
+  background-color: #6b4c9a;
+  color: white;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.team-link:hover {
+  background-color: #563b80;
+  transform: translateY(-2px);
+}
