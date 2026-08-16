@@ -6,223 +6,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daily Health Tracker</title>
     <style>
-:root {
-  /* these hex codes were coppied from a canva slideshow used to help wire-frame our code */
-  --deepLavendar: #5a4d7a;
-  --lilac: #b8a4d4;
-  --softMauve: #d5c8e4;
-  --midLavendar: #e0d6eb;
-  --blush: #eae3f0;
-}
-body {
-  background-color: var(--blush);
-  margin: 0px;
-  padding: 0;
-}
-/* navbar css start */
+YES 😭 Copy-paste this **over your entire current navbar CSS** — from `.navBar` through the end of `.dropdown:hover .dropdown-content`.
+
+```css
 .navBar {
-  width: 100%;
-  height: 70px;
   position: fixed;
   top: 0;
   left: 0;
-  display: inline;
-  z-index: 3;
+  width: 100%;
+  height: 70px;
+  z-index: 100;
 }
+
 nav {
+  height: 70px;
   display: flex;
-  flex-direction: row;
-  float: sticky;
+  align-items: center;
   background-color: var(--lilac);
   border-bottom: 6px solid var(--deepLavendar);
-  right: 35px;
-  padding-top: 25px;
+  padding: 0 25px;
   gap: 25px;
-  justify-content: flex-end;
 }
+
 .name {
   margin-right: auto;
-  margin-left: 30px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
 }
-.name h2 {
-  margin: 0;
-  font-family: "Poppins", sans-serif;
+
+.name a {
   color: white;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
+  font-size: 22px;
 }
-.navBar a {
+
+#favicon {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  border: none;
+  border-radius: 50%;
+  margin: 0 8px 0 0;
+}
+
+.navBar > nav > a,
+.dropdown > a {
   text-decoration: none;
   color: white;
-  padding: 0 10px;
+  padding: 10px;
   font-weight: bold;
-  margin-bottom: 10px;
   font-family: "Poppins", sans-serif;
+  cursor: pointer;
 }
 
 nav a:hover {
   color: var(--deepLavendar);
 }
 
+.dropdown {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
+  top: 70px;
+  left: 0;
   background-color: var(--lilac);
-  height: 60px;
-  width: 120px;
-  z-index: 1;
+  min-width: 140px;
+  z-index: 101;
+  padding: 10px 0;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--softMauve);
+  color: var(--deepLavendar);
 }
 
 .dropdown:hover .dropdown-content {
   display: flex;
   flex-direction: column;
-  align-content: center;
 }
+
 #dropdown1 {
-  height: 60px;
-  width: 140px;
-  padding-top: 10px;
+  min-width: 140px;
+  height: auto;
 }
+
 #dropdown2 {
-  height: 90px;
-  width: 140px;
-  padding-top: 10px;
+  min-width: 140px;
+  height: auto;
 }
 
 #dropdown3 {
-  height: 60px;
-  padding-top: 10px;
+  min-width: 140px;
+  height: auto;
 }
-.tracker-box {
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  max-width: 420px;
-  margin: 80px auto;
-}
-/* navbar css end */
-.title {
-  color: var(--deepLavendar);
-  border-bottom: 3px solid var(--lilac);
-  padding-bottom: 8px;
-  margin-top: 0;
-}
-.form-group {
-  margin-bottom: 15px;
-}
-label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: 600;
-  color: var(--deepLavendar);
-}
-input {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid var(--midLavendar);
-  border-radius: 6px;
-  box-sizing: border-box;
-}
-button {
-  width: 100%;
-  background-color: var(--deepLavendar);
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 6px;
-  font-weight: 600;
-  cursor: pointer;
-  font-size: 16px;
-}
-button:hover {
-  background-color: var(--lilac);
-}
-.results {
-  display: none;
-  margin-top: 20px;
-}
-.user {
-  font-weight: 700;
-  color: var(--deepLavendar);
-  margin: 15px 0 10px 0;
-  font-size: 16px;
-}
-.good-news {
-  background-color: #f0fdf4; /* Light green alert background */
-  color: var(--deepLavendar);
-  padding: 12px;
-  border-left: 5px solid var(--lilac);
-  border-radius: 4px;
-  margin: 8px 0;
-  font-weight: 600;
-}
-.alert-news {
-  background-color: #fff5f5; /* Light red alert background */
-  color: var(--deepLavendar);
-  padding: 12px;
-  border-left: 5px solid var(--lilac);
-  border-radius: 4px;
-  margin: 8px 0;
-  font-weight: 600;
-}
-h3 {
-  background-color: var(--deepLavendar);
-  border: 3px solid var(--deepLavendar);
-  border-radius: 20px;
-  max-width: 150px;
-}
-h3 {
-  display: flex;
-  justify-content: center;
-}
-h2 {
-  display: flex;
-  justify-content: center;
-}
-h1 {
-  display: flex;
-  justify-content: center;
-}
-      /* Footer CSS */
+```
 
-.site-footer {
-  background-color: var(--deepLavendar);
-  color: white;
-  text-align: center;
-  padding: 40px 20px 25px;
-  margin-top: 60px;
-}
-
-.site-footer h2 {
-  color: white;
-  margin-bottom: 10px;
-}
-
-.site-footer p {
-  background: none;
-  border: none;
-  color: white;
-  margin: 8px 0;
-}
-
-.team-link {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 12px 28px;
-  background-color: #6b4c9a;
-  color: white;
-  text-decoration: none;
-  border-radius: 999px;
-  font-weight: 600;
-  transition: 0.2s ease;
-}
-
-.team-link:hover {
-  background-color: #563b80;
-  transform: translateY(-2px);
-}
-
-/* End of Footer CSS */
 
 
     </style>
