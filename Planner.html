@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planner</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="navBar">
+      <nav>
+        <div class="name">
+          <a href="index.html">Mental health</a>
+        </div>
+
+        <div class="dropdown">
+          <a href="#">Education</a>
+          <div class="dropdown-content" id="dropdown1">
+            <a href="education-mental.html">Mental Health</a>
+            <a href="education-physical.html">Physical Health</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <a href="#">Trackers</a>
+          <div class="dropdown-content" id="dropdown2">
+            <a href="mood-tracker.html">Mood</a>
+            <a href="mindfullness-tracker.html">Mindfulness</a>
+            <a href="health-tracker.html">Health</a>
+          </div>
+        </div>
+
+        <a href="planner.html">Planner</a>
+
+        <div class="dropdown">
+          <a href="#">Self Care</a>
+          <div class="dropdown-content" id="dropdown3">
+            <a href="self-care-mental.html">Mental</a>
+            <a href="self-care-physical.html">Physical</a>
+          </div>
+        </div>
+
+        <a href="kindness-wall.html">Kindness Wall</a>
+      </nav>
+    </div>
+
+    <div class="top">
+      <section class="studyTimer">
+        <iframe
+          id="timer"
+          src="https://studywithme.io/aesthetic-pomodoro-timer/"
+          style="border: 0"
+          width="300"
+          height="350"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+      </section>
+
+      <iframe
+        src="https://open.spotify.com/embed/playlist/3tVn8zUOCMV5hfT8NRyHoJ"
+        width="300"
+        height="352"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+
+      <iframe
+        src="https://open.spotify.com/embed/playlist/07lYUEyTkWP3NqIa7Kzyqx"
+        width="300"
+        height="352"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+
+      <iframe
+        src="https://open.spotify.com/embed/album/1PiqaSNptT2HN7Znz16fiK"
+        width="300"
+        height="352"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <section class="boxes">
+      <div class="second">
+        <h2>Notes:</h2>
+        <textarea
+          id="notes"
+          rows="9"
+          placeholder="Write your notes here..."
+        ></textarea>
+      </div>
+
+      <div class="second">
+        <h2>Goals:</h2>
+        <textarea
+          id="goals"
+          rows="9"
+          placeholder="Write your goals here..."
+        ></textarea>
+      </div>
+
+      <div class="second">
+        <h2>Mindfulness</h2>
+        <textarea
+          id="mindfulness"
+          rows="9"
+          placeholder="How do I want to practice mindfulness today..."
+        ></textarea>
+      </div>
+
+      <div class="second">
+        <h2>Movement</h2>
+        <textarea
+          id="movement"
+          rows="9"
+          placeholder="How do I want to move my body today..."
+        ></textarea>
+      </div>
+    </section>
+
+    <section class="fullWeek">
+      <h3>Weekly Planner</h3>
+
+      <section class="planner">
+        <div class="days">
+          <button type="button">Sunday</button>
+          <button type="button">Monday</button>
+          <button type="button">Tuesday</button>
+          <button type="button">Wednesday</button>
+          <button type="button">Thursday</button>
+          <button type="button">Friday</button>
+          <button type="button">Saturday</button>
+        </div>
+
+        <div class="week">
+          <textarea id="sunday" rows="20" placeholder="Sunday"></textarea>
+          <textarea id="monday" rows="20" placeholder="Monday"></textarea>
+          <textarea id="tuesday" rows="20" placeholder="Tuesday"></textarea>
+          <textarea id="wednesday" rows="20" placeholder="Wednesday"></textarea>
+          <textarea id="thursday" rows="20" placeholder="Thursday"></textarea>
+          <textarea id="friday" rows="20" placeholder="Friday"></textarea>
+          <textarea id="saturday" rows="20" placeholder="Saturday"></textarea>
+        </div>
+
+        <button id="savePlanner">Save Planner</button>
+        <button type="reset">Reset Planner</button>
+      </section>
+    </section>
+
+    <script src="planner.js"></script>
+  </body>
+</html>
