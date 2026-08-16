@@ -9,7 +9,7 @@ const messages = [
   "😊 Don't forget to celebrate the little wins.",
   "💫 You can make a positive difference.",
   "🌿 Take things one step at a time.",
-  "💛 You are allowed to rest and recharge."
+  "💛 You are allowed to rest and recharge.",
   "🌸 You’ve got this!",
 "💜 Small steps count.",
 "✨ Believe in yourself!",
